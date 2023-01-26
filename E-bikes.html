@@ -1,22 +1,15 @@
 <html>
-  <body>
+  <head>
+    <title> E-Bikes </title>
+  </head>
+  <body> 
     <nav>
-      <li> <a href= "index.html"> Home </a> </li>
-      <li> <a href= "https://www.w3schools.com/css/css_list.asp"> CSS List Properties </a> </li>
-    </nav>
-<head>
-  <title> E-Bikes </title>
-</head>
-<center>
-  <body>
+      <li class= "navli"> <a href= "index.html"> Home </a> </li>
+     </nav>
+    <br>
+    <br>
+  <center>
   <h1> E-Bikes </h1>
-  <ul>
-    <li> Rad Power Bikes </li>
-    <li> Lectric eBikes</li>
-    <li> Ride1Up </li>
-    <li> Aventon </li>
-    <li> Ariel Rider </li>
-  </ul>
 <table>
   <tr>
     <th> Brand </th>
@@ -28,7 +21,7 @@
     <td> Rad Power Bikes </td>
     <td> 4.4 / 5 </td>
     <td> $1,500 - $2,000 </td>
-    <td> <img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYwr-ydNF_lEWk39V_KH9UD6ydrGIZl-UKJg&usqp=CAU" height = 200 width = 200> </td>
+    <td> <img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYwr-ydNF_lEWk39V_KH9UD6ydrGIZl-UKJg&usqp=CAU" height = 150 width = 150> </td>
   </tr>
   <tr>
     <td> Lectric eBikes </li>
@@ -48,31 +41,56 @@
     <td> $1,000 - $1,900 </td>
     <td> <img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxiEv7WlQ5Buz21Sq5KjEnAw3QbEPzFGg5pQ&usqp=CAU" height = 150 width = 150> </td>
   </tr>
-  <tr>
+    <tr>
     <td> Ariel Rider </li>
     <td> 4.8 / 5 </td>
-    <td> </td>
+    <td> $1,900 - $3,300</td>
     <td> <img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc5GVD20msIfLpI9FdWjHFRz1UKznUU2xCBw&usqp=CAU" height = 150 width = 150> </td>
   </tr> 
 </table>
-</body>
-</center>
 
+<h2> Shop now at these websites: </h2>
+
+<ul>
+    <li> <a href= "https://www.radpowerbikes.com/"> Rad Power Bikes </a> </li>
+    <li> <a href= "https://lectricebikes.com/"> Lectric eBikes </a> </li>
+    <li> <a href= "https://ride1up.com/"> Ride1Up </a> </li>
+    <li> <a href= "https://www.aventon.com/collections/ebikes"> Aventon </a> </li>
+    <li> <a href="https://arielrider.com/"> Ariel Rider </a> </li>
+  </ul>
+
+</center>
+</body>
     </html>
     
 <style>
-h1 {
-  text-align: center;
-  font-family: "Courier New";
-  font-size: 40px;
+  nav {
+  list-style: none;
+  postition: fixed;
+  width: 100%;
+  background-color: lightblue;
 }
 body {
-  background-color: darkturquoise;
+  background-color: #00a4ff;
 }
-ul {
-  list-style-position: inside; 
-  list-style-type: number;
-  margin-left: -2%;
+.navli {
+  font-family: fantasy;
+  display: inline;
+  float: left;
+  padding: 15px;
+}
+.navli:hover {
+  background-color: lightblue;
+  font-size: 40px;
+}
+h1 {
+  margin-right: .2%;
+  border: dotted;
+  font-family: fantasy;
+  font-size: 60px;
+}
+h1:hover {
+  text-shadow: 3px 3px 0px slateblue;
 }
 table, th, td {
   border: 5px ridge;
@@ -80,14 +98,48 @@ table, th, td {
   border-collapse: collapse;
   padding: 20px;
 }
+table {
+  margin-top: -.8%;
+  background-color: slateblue;
+}
 th {
   font-family: fantasy;
   font-size: 30px;
 }
+th:hover {
+  font-size: 50px;
+}
 td {
   text-align: center;
 }
-tr:hover {
-  background-color: grey;  
+tr {
+  font-family: fantasy;
 }
-  </style>
+tr:hover {
+  color: slateblue;
+  background-color: lightblue;  
+}
+h2 {
+  font-family: Monospace;
+  
+  border: dotted;
+}
+h2:hover {
+  font-size: 100px;
+}
+ul {
+  list-style-position: inside;  
+  margin-right: 1.5%;
+}
+ul:hover {
+  background-color: lightblue;
+}
+li {
+  color: lightblue;
+  list-style-type: square;
+  padding: 10px;
+}
+li:hover {
+  background-color: slateblue;
+}
+</style>
