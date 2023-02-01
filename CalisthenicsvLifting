@@ -3,21 +3,37 @@
     <title> Why Calisthenics is Better than Lifting </title>
   </head>
   <body>
-    <nav>
+  <nav>
       <li class= "navli"> <a href= "index.html"> Home </a> </li>
     </nav>
     <br>
     <br>
-    <center>
-    <h1> Why Calisthenics is Better than Lifting </h1>
-    <br>  
+  <center>
+  <h1> Why Calisthenics is Better than Lifting Weights </h1>
+     
     <iframe width="560" height="315" src="https://www.youtube.com/embed/-JXt2Luo4gs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen> </iframe>
+    <br>
+    <br>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScB7o4ZFuUKG-Pj3mDJ76_DObuOKSEpY01CBjpLMZQMNfig5Q/viewform?embedded=true" width="640" height="962" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      
 </center>
 </body>
 </html>
 
 
+
+
 <style>
+h1 {
+  font-family: impact;
+  font-size: 40px;
+}
+h1:hover {
+  text-shadow: 3px 3px 0px slateblue;
+}
+body {
+  background-color: rgb(200,200,200);
+}
 nav {
   top: 0;
   left: 0;
@@ -33,8 +49,5 @@ font-size: 30px;
 } 
 .navli:hover {
   font-size: 35px;
-}
-li {
-  list-style-position: inside;
 }
 </style>
