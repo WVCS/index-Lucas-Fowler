@@ -1,49 +1,94 @@
-<html>
+   <html>
   <head>
     <title> LUCAS ENERGY </title>
     <link rel= "icon" href= "Food_Bev_Logo.png">
   </head>
   <body>
   <nav>
-    <li class="navli"><a href="https://wvcs.github.io/index-Lucas-Fowler/"> HOME </a></li>
-    <li></li>
+    <li class="navlih"><a href="https://wvcs.github.io/index-Lucas-Fowler/"> HOME </a></li>
+    <li class="navli"><a href =</li>
   </nav>
   <center>
     <br>
     <br>
     <br>
-    <br>
     <h1> LUCAS ENERGY </h1>
   </center>
+    <div class="wrapper">
+      <div class="A"> A </div>
+      <div class="B"> B </div>
+      <div class="C"> C </div>
+      <div class="D"> D </div>
+      <div class="E"> E </div>
+      <div class="F"> F </div>
+      <div class="G"> G </div>
+      <div class="H"> H </div>
+    </div>
   <br>
   </body>
 </html>
-  
+ 
+
+
   <style>
-  nav {
+  body {
+  background-color: darkturquoise;
+}
+nav {
   top: 0;
   left: 0;
   position: fixed;
   width: 100%;
   background-color: black;
   list-style-type: none;
-
-  text-align: left;
+  text-align: right;
 }
 a {
   text-decoration: none;
   font-family: Impact;
   color: slateblue;
 }
-.navli {
-  padding: 20px;
+.navlih {
+  padding: 15px;
   font-size: 25px;
   font-family: serif;
 }
-.navli:hover {
-  text-shadow: 5px 5px black;
+.navlih:hover {
+  text-shadow: 1px 1px white;
 }
 h1 {
   font-family: Georgia;
+  font-size: 50px;
+  border: ridge grey 10px;
+}
+div {
+  padding: 10px;
+  background-color: black;
+  border: dotted white;
+  color: slateblue;
+}
+.wrapper {
+  height: 49vh;
+  display: grid;
+  grid-template: 
+    "A B C D" auto
+    "E F G H";
+  grid-row-gap: 15px;
+  grid-column-gap: 15px;
+}
+.A {
+  grid-row: 1;
+  grid-column: 1 / 3;
+}
+.B {
+  grid-row: 1;
+  grid-column: 3 / 5;
+}
+.C {
+  grid-area: 2 / 1 / 4 / 1;
+}
+.E {
+  grid-row: 2 / 4;
+  grid-column: 3;
 }
     </style>
