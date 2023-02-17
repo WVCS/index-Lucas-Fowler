@@ -44,8 +44,9 @@
 
 
   <style>
-  body {
+body {
   background-color: darkturquoise;
+  overflow-x: hidden;
 }
 nav {
   top: 0;
@@ -69,7 +70,6 @@ h {
   text-shadow: 1px 1px white;
 }
 h1 {
-  margin-left: -.4%;
   font-family: Georgia;
   font-size: 50px;
   border: ridge grey 10px;
@@ -83,6 +83,7 @@ div {
   color: slateblue;
 }
 .wrapper {
+  
   width: 100%;
   display: grid;
   grid-template: 
@@ -90,7 +91,7 @@ div {
     "D E F";
   grid-row-gap: 15px;
   grid-column-gap: 15px;
-  grid-template-columns: 32% 33% 33%
+  grid-template-columns: 33.33333333333% 33.3333333333333% 33.33333333333%;
 }
 #A {
   grid-row: 1;
@@ -121,8 +122,5 @@ div {
 }
 .listbody {
   list-style-type: none;
-}
-.grid {
-  list
 }
     </style>
