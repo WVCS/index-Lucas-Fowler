@@ -1,127 +1,146 @@
-   <html>
+  <html>
   <head>
     <title> LUCAS ENERGY </title>
     <link rel= "icon" href= "Food_Bev_Logo.png">
   </head>
   <body>
-  <nav>
-    <li class="navlih"><a href="https://wvcs.github.io/index-Lucas-Fowler/"> HOME </a></li>
-  </nav>
   <center>
+  <nav>
+    <li class="navli"><a href="https://wvcs.github.io/index-Lucas-Fowler/"> HOME </a><li>
+  </nav>
+    <br>
     <br>
     <h1> LUCAS ENERGY </h1>
     <div class="wrapper">
       <div id="A">
         <ul>
-          <li class="listhead"><h>Key Ingredients:</h></li>
-          <li class="listbody"><a>beta-alanine, caffeine, creatine, L-citrulline, BCAAs (Branched chain amino acids)</a></li>
+          <center>
+          <li class="listhead">Key Ingredients:</li>
+          <li class="listbody">beta-alanine, caffeine, creatine, L-citrulline, BCAAs (Branched chain amino acids)</li>
         </ul>
       </div>
       <div id="B">
-        <h>Menu:</h>
+        <ul>
+          <center>
+            <li class="listhead"><a href="website-link-goes-here" target="_blank">Menu</a></li>
       </div>
       <div id="C">
-        <h>Store Hours:</h>
+        <ul>
+        <li class="listhead">Store Hours:</li>
+          <li class="listbody">Open 1:00am-5:00am</li>
+        </ul>
       </div>
       <div id="D">
-        <h>Phone #</h>
-      </div>
+        <ul>
+        <li class="listhead">Phone #</li>
+          <li class="listbody">858CAFFEEN</li>
+        </ul>
+          </div>
       <div id="E">
-        <ul class="grid">
-          <li class="listhead"><h>Free Wifi</h></li>
-          <li class="listbody"><a>Password: I<3CAFFEINE</a></li>
+        <ul>
+          <center>
+          <li class="listhead">Free Wifi</li>
+          <li class="listbody"><h>Password: I<3CAFFEINE</h></li>
         </ul>
       </div>
       <div id="F">
-        <h>Social Media/Other Contact Info:</h>
+        <ul>
+        <li class="listhead">Social Media/Other Contact Info:</li>
+          <li class="listbody"><h>Email: Lenergy@gmail.com, Instagram: @ENERGY_LUCAS</h></li>
+        </ul>
       </div>
     </div>
     </center>
-  <br>
-  </body>
-</html>
+        </body>
+        </html>
  
 
-
-  <style>
+<style>
 body {
-  background-color: darkturquoise;
+  background-image: url('https://comark-machine.wonder-cdn.com/uploads/image/5e32923ad5cde.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 nav {
-  top: 0;
-  right: 0;
-  position: fixed;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0px;
+  left: 0px;
   width: 100%;
-  background-color: black;
+  background: black;
+}
+.navli { 
   list-style-type: none;
-  text-align: right;
-}
-h {
-  font-family: Impact;
-  color: slateblue;
-}
-.navlih {
   padding: 15px;
   font-size: 25px;
-  font-family: Impact;
+  font-family: serif;
+  color: slateblue;
+}
+.navli:hover {
+  text-shadow: 1px 1px white;
 }
 a {
   text-decoration: none;
 }
-.navlih:hover {
-  text-shadow: 1px 1px white;
+h {
+  text-decoration: none;
+  color: slateblue;
+  font-family: Georgia;
 }
 h1 {
-  font-family: Georgia;
-  font-size: 50px;
-  border: ridge grey 10px;
-  width: 100%;
-  padding: 10px;
-}
-div {
-  padding: 10px;
-  background-color: black;
-  border: dotted white;
-  color: slateblue;
+  text-align: center;
+  border: ridge 10px;
+  border-color: slateblue;
+  color: blue;
+  font-family: Brush Script MT; 
 }
 .wrapper {
-  width: 100%;
+  padding: 10px;
   display: grid;
   grid-template: 
-    "A B C" auto
+    "A B C"
     "D E F";
   grid-row-gap: 15px;
   grid-column-gap: 15px;
-  grid-template-columns: 33% 34% 33%; 
+  background-color: black;
+  border: dotted blue;
+  color: slateblue;
 }
 #A {
-  grid-row: 1;
-  grid-column: 1;
+  background-color: black;
+  border: dotted blue;
 }
 #B {
-  grid-row: 1;
-  grid-column: 2;
+  background-color: black;
+  border: dotted blue;
 }
 #C {
-  grid-row: 1;
-  grid column: 2;
+  background-color: black;
+  border: dotted blue;
 }
 #D {
-  grid-row: 2;
-  grid column: 1;
+  background-color: black;
+  border: dotted blue;
 }
 #E {
-  grid-row: 2;
-  grid-column: 2;
+  background-color: black;
+  border: dotted blue;
 }
 #F {
-  grid-row: 2;
-  grid-column: 3; 
+  background-color: black;
+  border: dotted blue;
 }
 .listhead {
   list-style-type: none;
+  font-family: Impact;
 }
 .listbody {
   list-style-type: none;
+  display: none;
 }
-    </style>
+.listhead:hover + .listbody {
+  display: block;
+}
+       </style>
