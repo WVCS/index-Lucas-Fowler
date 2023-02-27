@@ -1,4 +1,4 @@
-  <html>
+ <html>
   <head>
     <title> LUCAS ENERGY </title>
     <link rel= "icon" href= "Food_Bev_Logo.png">
@@ -6,7 +6,7 @@
   <body>
   <center>
   <nav>
-    <li class="navli"><a href="https://wvcs.github.io/index-Lucas-Fowler/"> HOME </a><li>
+    <li class="navli"><a href="https://wvcs.github.io/index-Lucas-Fowler/" style="color:black;"> HOME </a></li>
   </nav>
     <br>
     <br>
@@ -18,11 +18,13 @@
           <li class="listhead">Key Ingredients:</li>
           <li class="listbody">beta-alanine, caffeine, creatine, L-citrulline, BCAAs (Branched chain amino acids)</li>
         </ul>
-      </div>
+      </div> 
       <div id="B">
         <ul>
           <center>
-            <li class="listhead"><a href="website-link-goes-here" target="_blank">Menu</a></li>
+            <li class="listhead">Menu:</li>
+            <li class="listbody"><img src="MENU.png" style="width:1400px;height:800px;"></li>
+            </ul>
       </div>
       <div id="C">
         <ul>
@@ -40,42 +42,43 @@
         <ul>
           <center>
           <li class="listhead">Free Wifi</li>
-          <li class="listbody"><h>Password: I<3CAFFEINE</h></li>
+          <li class="listbody">Password: I<3CAFFEINE</li>
         </ul>
       </div>
       <div id="F">
         <ul>
         <li class="listhead">Social Media/Other Contact Info:</li>
-          <li class="listbody"><h>Email: Lenergy@gmail.com, Instagram: @ENERGY_LUCAS</h></li>
+          <li class="listbody">Email: Lenergy@gmail.com, Instagram: @ENERGY_LUCAS</li>
         </ul>
       </div>
     </div>
     </center>
         </body>
         </html>
+   
+   
  
 
 <style>
-body {
-  background-image: url('https://comark-machine.wonder-cdn.com/uploads/image/5e32923ad5cde.jpg');
+  body {
+  background-image: url('https://www.textures4photoshop.com/tex/thumbs/storm-sky-with-lightning-effect-texture-free-thumb44.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
 nav {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   position: absolute;
   top: 0px;
   left: 0px;
   width: 100%;
-  background: black;
 }
 .navli { 
   list-style-type: none;
   padding: 15px;
   font-size: 25px;
-  font-family: serif;
+  font-family: impact;
   color: slateblue;
 }
 .navli:hover {
@@ -91,10 +94,12 @@ h {
 }
 h1 {
   text-align: center;
-  border: ridge 10px;
-  border-color: slateblue;
-  color: blue;
+  border: dotted;
+  border-color: black;
+  color: darkred;
   font-family: Brush Script MT; 
+  background-color: cyan;
+  font-size: 80px;
 }
 .wrapper {
   padding: 10px;
@@ -104,33 +109,34 @@ h1 {
     "D E F";
   grid-row-gap: 15px;
   grid-column-gap: 15px;
-  background-color: black;
-  border: dotted blue;
-  color: slateblue;
+  color: cyan;
+  font-size: 60px;
 }
 #A {
+  height: 300px;
   background-color: black;
-  border: dotted blue;
+  border: dotted white;
 }
 #B {
   background-color: black;
-  border: dotted blue;
+  border: dotted darkred;
 }
 #C {
   background-color: black;
-  border: dotted blue;
+  border: dotted white;
 }
 #D {
+  height: 300px;
   background-color: black;
-  border: dotted blue;
+  border: dotted darkred;
 }
 #E {
   background-color: black;
-  border: dotted blue;
+  border: dotted white;
 }
 #F {
   background-color: black;
-  border: dotted blue;
+  border: dotted darkred;
 }
 .listhead {
   list-style-type: none;
@@ -139,6 +145,8 @@ h1 {
 .listbody {
   list-style-type: none;
   display: none;
+  color: darkred;
+  word-wrap: break-word;
 }
 .listhead:hover + .listbody {
   display: block;
