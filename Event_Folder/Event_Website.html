@@ -12,14 +12,20 @@
     <h1> Reggae Fest </h1>
       <img src="Reggae_Fest.png">
     <div class="wrapper"> 
-        <div class="A"> General Admission </div>
-        <div class="B"> price and info </div>
-        <div class="C"> VIP tickets </div>
-        <div class="D"> more stuff </div>
-        <div class="E"> PIT seats </div>
-        <div class="F"> more stuff </div>
-        <div class="G"> more stuff </div>
-        <div class="H"> more stuff </div>
+        <div class="A"> 1-Day Pass-General Admission </div>
+        <div class="B"> $120 </div>
+        <div class="C"> VIP Section Tickets </div>
+        <div class="D"> $200 </div>
+        <div class="E"> 2-Day PIT Passes </div>
+        <div class="F"> $250 </div>
+        <div class="G"> Parking Passes </div>
+        <div class="H"> $40 </div>
+        <div class="I"> Shuttle Passes </div>
+        <div class="J"> $70 </div>
+        <div class="K"> 2-Day Passes-General Admission </div>
+        <div class="L"> $40 </div>
+        <div class="M"> $40 </div>
+        <div class="N"> $40 </div>
       </div>
   </body>
 </html>
@@ -51,7 +57,7 @@ nav {
   border: solid black 3px;
 }
 .navli:hover {
-  text-shadow: orange 2px 2px 2px;
+  text-shadow: #e62e00 2px 2px 2px;
 }
 a {
   text-decoration: none;
@@ -69,7 +75,25 @@ h1 {
     "A B"
     "C D"
     "E F" 
-    "G H";
+    "G H"
+    "I J"
+    "K L"
+    "M N";
   justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 800px) {
+  nav {
+    transform: rotate(180deg);
+  }
+  .navli {
+    transform: rotate(180deg);
+  }
+  .navli:hover {
+    text-shadow: lime 2px 2px 2px;
+  }
+  .wrapper {
+    background-color: #e62e00; 
+  }
 }
   </style>
