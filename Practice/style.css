@@ -1,0 +1,54 @@
+h1 {
+  font-size: 50px;
+  font-family: cursive;
+  color: navy;
+}
+h1:hover {
+  font-size: 100px;
+  background-color: cyan;
+  border: dashed yellow;
+  width: 520px;
+}
+nav {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: red;
+  display: flex;
+  width: 100%;
+}
+.navli {
+  list-style: none;
+  padding: 20px;
+}
+.navli:hover {
+  padding: 100px;
+  background-color: black;
+}
+a {
+  text-decoration: none;
+}
+.myList {
+  list-style-type: square;
+  background-color: green;
+  width: 250px;
+  justify-content: right;
+}
+.li:hover {
+  background-color: purple;
+  padding: 10px;
+}
+table, tr, th, td {
+  border: solid turquoise;
+  background-color: red;
+}
+td:hover {
+  background-color: black;
+  color: white;
+}
+table {
+  border-collapse: collapse;
+}
+img:hover {
+  display: none;
+}
