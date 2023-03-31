@@ -40,5 +40,20 @@ h1 {
   position: relative;
   color: blue;
   border: dotted white; 
+  width: 35vw;
 }
+h1:hover {
+  animation: rotation 2s linear; 
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+    background-color: white;
+  }
+  to {
+    transform: rotate(359deg);
+    background-color: black;
+  }
+}
+h1 {animation-timing-function: ease-in-out;}
 </style>
