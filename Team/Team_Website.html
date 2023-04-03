@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title> Trey's Tricking Team </title>
+    <title> </title>
     <link rel="icon" href="TTT.png">
   </head>
   <body>
@@ -9,16 +9,30 @@
     </nav>
     <br>
     <br>
+    <br>
     <center>
-    <h1> Treys Tricking Team </h1>
-      <video controls src="RPReplay-Final1680472749.mov">
-    </center>
+    <h1 id="rotate"> Treys Tricking Team </h1>
+    
+    <video id="treyflip" autoplay src="RPReplay-Final1680472749.mov">
+      </center>
+      <br>
+      <br>
+      <br>
+      <br>
+      <center>
+      <button id="fail" type="button" onclick="alert('DO NOT TRY THIS AT HOME')"> CLICK HERE BEFORE YOU WATCH </button>
+    <br>
+    <video id="treyfail" controls muted src="RPReplay_Final1680472722">
+    
   </body>
 </html>
 
 <style>
-  body {
+ body {
   background-color: black;
+}
+body:hover, nav:hover {
+  cursor: wait;
 }
 nav {
   position: absolute;
@@ -31,30 +45,43 @@ nav {
   list-style: none;
   padding: 15px;
 }
+.navli:hover {
+  text-shadow: 2px 2px 2px navy;
+  cursor: wait;
+}
 .navtext {
   color: black;
-  font-family: monospace;
+  font-family: impact;
   font-size: 20px;
   text-decoration: none;
+  cursor: wait;
 }
 h1 {
+  padding: 10px;
   position: relative;
   color: blue;
-  border: dotted white; 
+  border: dashed 5px white; 
   width: 35vw;
 }
 h1:hover {
-  animation: rotation 2s linear; 
+  animation: rotation 3s ease-in-out; 
 }
 @keyframes rotation {
   from {
     transform: rotate(0deg);
     background-color: white;
+    border: dashed 5px black;
   }
   to {
     transform: rotate(359deg);
     background-color: black;
   }
 }
-h1 {animation-timing-function: ease-in-out;}
+#fail {
+  background-color: black;
+  color: white;
+  border: solid white;
+  cursor: wait;
+}
+
 </style>
