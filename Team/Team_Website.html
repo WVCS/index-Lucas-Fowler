@@ -19,7 +19,7 @@
       <br>
       <center>
        <div class="aboutttt">
-        <p1> This is Trey. He is a professional parkour and tricking athlete. Some of his hobbies are cubing and arm wrestling. Recently, he has been trying to form a team of trickers to compete in the next tricking competition called Loopkicks Gathering 2023. </p1> 
+        <p1> This is Trey. He is a professional parkour and tricking athlete. Some of his hobbies are cubing and arm wrestling. He has been trying to form a team of trickers to compete in the next tricking competition called Loopkicks Gathering 2023. </p1> 
         <br>
          <p1> For more information about this event click on the link: </p1>
          <br>
@@ -210,14 +210,13 @@ function showSlides(n) {
       <br>
       
       <div id="tutorial">
-      <p2 style="font-size: 50px;"> IF YOU ARE A BEGINNER LEARN HOW TO DO A BACKFLIP!!!!! </p2>
-      <br>
+      <p2 style="font-size: 3vw;"> IF YOU ARE A BEGINNER, LEARN HOW TO DO A BACKFLIP!!!!! </p2>
+        <br>
       <p2> Here is a turorial from Trey himself: </p2>
       </div>
       <br>
       <br>
-       </center>
-      <center>
+      
       <div class="wrapper">
         <div id="A">
           <p3> Step #1 </p3> <br>
@@ -236,9 +235,30 @@ function showSlides(n) {
           <img class="backflip" src="t4.jpg">
         </div>
       </div>
+      <br>
+      <br>
+      <hr> 
+      <br>
+      
+      <div class="quote">
+        <p4> Famous Quote by Trey: </p4><br>
+        <p3 style="font-size: 30px;">"You do parkour? Can you do a backflip?"</p3>
+      <br> 
+        <img src="t5.jpg">
+        <br>
+        <br>
+        <hr>
+        <br>
+        
+        <p2 style="font-size: 40px"> Tips from Trey </p2>
+        <ul>
+          <li class="tips"> Can you do a sideflip? </li>
+          <li class="tips"> Epic! </li>
+          <li class="tips"> backflips! </li>
+        </ul>
+      </div>
+      
     </center>
-    
-    
   </body>
 </html>
 
@@ -374,14 +394,15 @@ iframe:hover {
   cursor: wait;
 }
 #tutorial {
-  width: 900px;
+  width: 60vw;
+  border: dotted green 5px;
 }
 .wrapper {
   display: grid;
   grid-template:
     "A B C D";
   place-items: center;
-  width: 60vw;
+  width: 1000px;
 }
 .wrapper:hover {
   cursor: wait;
@@ -391,11 +412,25 @@ iframe:hover {
 }
 .backflip:hover {
   cursor: wait;
+  animation: disappear 3s;
+}
+p4 {
+  color: green;
+  font-size: 50px;
+}
+p4:hover {
+  animation: disappear 3s;
+}
+.tips {
+  color: blue;
+  font-size: 25px;
+}
+.tips:hover {
+  animation: disappear 3s;
 }
 
-
 @media only screen and (max-width: 1170px) {
-  body:hover, nav:hover, .navli:hover, h1:hover, #treyflip:hover, .aboutttt:hover, p1:hover, p2:hover, a:hover, .slideshow-container:hover, .prev:hover, .next:hover, input[type=radio]:hover, #submit:hover, .blue:hover, #submission:hover, .dot:hover {
+  body:hover, nav:hover, .navli:hover, h1:hover, #treyflip:hover, .aboutttt:hover, p1:hover, p2:hover, a:hover, .slideshow-container:hover, .prev:hover, .next:hover, input[type=radio]:hover, #submit:hover, .blue:hover, #submission:hover, .dot:hover, .wrapper:hover, .backflip:hover, #tutorial:hover, p4:hover, .tips:hover {
     cursor: not-allowed;
   }
   nav {
@@ -418,6 +453,15 @@ iframe:hover {
   }
   iframe {
     width: 60vw;
+  }
+  #tutorial: {
+    width: 60vw;
+  }
+  .wrapper {
+    grid-template: 
+      "A B"
+      "C D";
+    width: 65vw;
   }
 }
 </style>
