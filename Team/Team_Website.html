@@ -25,10 +25,11 @@
          <br>
           <a style="font-size: 35px; color: red;" href="https://www.loopkickstricking.com/gathering">LINK</a>
         </div>
-       
+       <br>
     <br>
     <hr>
     <br>    
+        <br>
     
   <div class="slideshow-container">
 
@@ -67,7 +68,7 @@
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 750px;
+  max-width: 800px;
   position: relative;
   margin: auto;
 }
@@ -196,14 +197,45 @@ function showSlides(n) {
       <br>
       <div class="aboutttt">
       <p1> Before you try out for Trey's tricking team, you must be able to do a backflip and a cork. If you can't do those basic flips, Trey will not let you join his team. The only other way he would let you join is if you could beat him in an arm wrestle. </p1>
-      </div>
+        <br>
+        <br>
+        <p3> For those of you that don't even know how to cork -_- </p3>
       <br>
-<iframe width="700" height="350" src="https://www.youtube.com/embed/6yvOSUAHgtE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <br>
+<iframe width="750" height="350" src="https://www.youtube.com/embed/6yvOSUAHgtE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
       <br>
       <br>
       <hr>
       <br>
-      <p3> 
+      
+      <div id="tutorial">
+      <p2 style="font-size: 50px;"> IF YOU ARE A BEGINNER LEARN HOW TO DO A BACKFLIP!!!!! </p2>
+      <br>
+      <p2> Here is a turorial from Trey himself: </p2>
+      </div>
+      <br>
+      <br>
+       </center>
+      <center>
+      <div class="wrapper">
+        <div id="A">
+          <p3> Step #1 </p3> <br>
+          <img class="backflip" src="t1.jpg">
+        </div>
+        <div id="B">
+          <p3> Step #2 </p3> <br>
+          <img class="backflip" src="t2.jpg">
+        </div>
+        <div id="C"> 
+          <p3> Step #3 </p3> <br>
+          <img class="backflip" src="t3.jpg">
+        </div>
+        <div id="D"> 
+          <p3> Step #4 </p3> <br>
+          <img class="backflip" src="t4.jpg">
+        </div>
+      </div>
     </center>
     
     
@@ -292,6 +324,13 @@ p2 {
 p2:hover {
   animation: disappear 3s;
 }
+p3 {
+  color: blue;
+  font-size: 35px;
+}
+p3:hover {
+  animation: disappear 3s;
+}
 a:hover {
   animation: disappear 3s;
 }
@@ -334,6 +373,26 @@ iframe:hover {
 #submission:hover {
   cursor: wait;
 }
+#tutorial {
+  width: 900px;
+}
+.wrapper {
+  display: grid;
+  grid-template:
+    "A B C D";
+  place-items: center;
+  width: 60vw;
+}
+.wrapper:hover {
+  cursor: wait;
+}
+.backflip {
+  width: 180px;
+}
+.backflip:hover {
+  cursor: wait;
+}
+
 
 @media only screen and (max-width: 1170px) {
   body:hover, nav:hover, .navli:hover, h1:hover, #treyflip:hover, .aboutttt:hover, p1:hover, p2:hover, a:hover, .slideshow-container:hover, .prev:hover, .next:hover, input[type=radio]:hover, #submit:hover, .blue:hover, #submission:hover, .dot:hover {
@@ -361,5 +420,4 @@ iframe:hover {
     width: 60vw;
   }
 }
-
 </style>
