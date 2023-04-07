@@ -11,12 +11,11 @@
     <br>
     <br>
     <center>
-    <h1 id="rotate"> Treys Tricking Team </h1>
+    <h1> Treys Tricking Team </h1>
     <br>
       
     <video id="treyflip" controls src="RPReplay-Final1680472749.mov">
       </center>
-      <br>
       <br>
       <center>
        <div class="aboutttt">
@@ -26,8 +25,9 @@
          <br>
           <a style="font-size: 35px; color: red;" href="https://www.loopkickstricking.com/gathering">LINK</a>
         </div>
-        
+       
     <br>
+    <hr>
     <br>    
     
   <div class="slideshow-container">
@@ -79,7 +79,7 @@
 
 /* Next & previous buttons */
 .prev, .next {
-  cursor: pointer;
+  cursor: wait;
   position: absolute;
   top: 50%;
   width: auto;
@@ -118,7 +118,7 @@
 
 /* The dots/bullets/indicators */
 .dot {
-  cursor: pointer;
+  cursor: wait;
   height: 15px;
   width: 15px;
   margin: 0 2px;
@@ -174,8 +174,11 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 </script>      
-        
-     <p2> Which one was your favorite? </p2>
+      <br><br>  
+      
+     <p2> Which picture was your favorite? </p2>
+      <br>
+      <br>
 <form>
   <input type="radio" id="1" name="favtrey" onclick="document.getElementById('submission').style.display='none' ">
   <label for="red"><p class="blue">1st</p></label>
@@ -187,7 +190,23 @@ function showSlides(n) {
 </form>
 <br>                                               
 <p2 id="submission"> Your response has been recorded </p2>
-    </center>  
+      <br>
+      <br>
+      <hr>
+      <br>
+      <div class="aboutttt">
+      <p1> Before you try out for Trey's tricking team, you must be able to do a backflip and a cork. If you can't do those basic flips, Trey will not let you join his team. The only other way he would let you join is if you could beat him in an arm wrestle. </p1>
+      </div>
+      <br>
+<iframe width="700" height="350" src="https://www.youtube.com/embed/6yvOSUAHgtE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <br>
+      <br>
+      <hr>
+      <br>
+      <p3> 
+    </center>
+    
+    
   </body>
 </html>
 
@@ -223,6 +242,7 @@ nav {
   cursor: wait;
 }
 h1 {
+  font-size: 40px;
   padding: 10px;
   position: relative;
   color: blue;
@@ -246,17 +266,28 @@ h1:hover {
 #treyflip {
   width: 700px;
 }
+#treyflip:hover {
+  cursor: wait;
+}
 .aboutttt {
-  width: 600px;
+  width: 900px;
+}
+.aboutttt:hover {
+  cursor: wait;
 }
 p1 {
   color: green;
+  font-size: 20px;
 }
 p1:hover {
   animation: disappear 3s;
 }
+a:hover {
+  cursor: wait;
+}
 p2 {
   color: red;
+  font-size: 25px;
 }
 p2:hover {
   animation: disappear 3s;
@@ -271,11 +302,21 @@ input[name=favtrey] {
   accent-color: green;
   display: flex;
 }
+input[type=radio]:hover {
+  cursor: wait;
+}
 .blue {
   color: blue;
 }
 .blue:hover {
   animation: disappear 3s;
+  cursor: wait;
+}
+#submit:hover {
+  cursor: wait;
+}
+iframe:hover {
+  cursor: wait;
 }
 @keyframes disappear {
   from {
@@ -287,12 +328,15 @@ input[name=favtrey] {
     display: none;
   }
 }
+#submission {
+  display: none;
+}
 #submission:hover {
-  animation: disappear 2s;
+  cursor: wait;
 }
 
 @media only screen and (max-width: 1170px) {
-  body:hover, nav:hover, .navli:hover, h1:hover, #treyflip:hover, .aboutttt:hover, p1:hover, p2:hover, a:hover, .slideshow-container:hover, .prev:hover, .next:hover, input[type=radio]:hover, #submit:hover, .blue:hover, #submission:hover {
+  body:hover, nav:hover, .navli:hover, h1:hover, #treyflip:hover, .aboutttt:hover, p1:hover, p2:hover, a:hover, .slideshow-container:hover, .prev:hover, .next:hover, input[type=radio]:hover, #submit:hover, .blue:hover, #submission:hover, .dot:hover {
     cursor: not-allowed;
   }
   nav {
@@ -313,6 +357,9 @@ input[name=favtrey] {
     position: relative;
     margin: auto;
   }
-  
+  iframe {
+    width: 60vw;
+  }
 }
+
 </style>
