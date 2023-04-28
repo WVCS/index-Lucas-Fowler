@@ -7,6 +7,44 @@
     <nav>
       <li class="navli"><a href="../index.html" class="font-effect-fire">HOME</a></li>
       </nav>
+    <button id="top" onclick="topFunction()"> TOP </button> 
+    <style> #top {
+  background-color: black;
+  color: darkred;
+  padding: 8px;
+  font-size: 15px;
+  position: fixed;
+  bottom: 5%;
+  left: 1%;
+  width: 70px;
+  height: 40px;
+  transition: width 0.4s, height 0.4s;
+  border-radius: 10px;
+}
+
+#top:hover {
+  width: 73px;
+  height: 43px;
+  background-color: rgb(30,30,30);
+  
+}
+    </style>
+    <script>
+      window.onscroll = function() {hideFunction()};
+
+function hideFunction() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {                
+    document.getElementById("top").style.display="block"; 
+  } else {
+    document.getElementById("top").style.display="none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+    </script>
     <br>
     <br>
     <br>
@@ -87,7 +125,7 @@
     <label for="name" class="infotext">Full-day pass (valid 24 Hours after purchase!)</label>
     <input type="text" id="name" name="name" required
        minlength="4" maxlength="8" size="10"> <br><br>
-   <button type="button" style="height: 80px;"onclick="alert('You just got scammed lol')"><a class="font-effect-fire" style="color: darkred; font-size: 20px; width: 75%"> Click here for more information </a></button>  <br><br>
+   <button type="button" style="height: 80px;"onclick="alert('You just got scammed lol')"><a class="font-effect-fire" style="color: darkred; font-size: 20px; width: 40%"> Click here for more information </a></button>  <br><br>
     <style> 
    label {
      color: darkred;
