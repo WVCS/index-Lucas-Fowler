@@ -19,6 +19,413 @@
     <br><br><br><br>
     <center>
       <h1> Lucas Surf Skate </h1>
+      <br> <br>
+      <!-- Slideshow container -->
+<div class = "wrapper">
+      <div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides">
+    <img src="https://d2l36g7div3qnn.cloudfront.net/2020/03/Paris-V3-Review.jpg" class="slideImage">
+  </div>
+
+  <div class="mySlides">
+    <img src="https://wildmex.com/wp-content/uploads/2021/07/surfboards-in-the-sand.jpg" class="slideImage">
+  </div>
+
+  <div class="mySlides">
+    <img src="https://surfskate.love/wp-content/uploads/2022/03/surfskatecollection-1.jpg" class="slideImage">
+  </div>
+        
+ <div class="mySlides">
+    <img src="https://cdn.shopify.com/s/files/1/0637/4719/articles/STG_Surfboards_1400x.jpg?v=1535202559" class="slideImage">
+  </div>
+
+ <div class="mySlides">
+    <img src="https://img.skatewarehouse.com/watermark/rsg.php?path=/content_images/wheelarticle/wheelselection.jpg&nw=780" class="slideImage">
+  </div>
+        
+  <div class="mySlides">
+    <img src="https://static.wixstatic.com/media/1a8abc_2892a5f098074be5b3680dd138d3af4f~mv2.png/v1/fill/w_750,h_1000,al_c,q_90,usm_0.66_1.00_0.01/1a8abc_2892a5f098074be5b3680dd138d3af4f~mv2.png" class="slideImage">
+  </div>       
+</div>
+
+      <script>
+      function initComparisons() {
+  var x, i;
+  /* Find all elements with an "overlay" class: */
+  x = document.getElementsByClassName("img-comp-overlay");
+  for (i = 0; i < x.length; i++) {
+    /* Once for each "overlay" element:
+    pass the "overlay" element as a parameter when executing the compareImages function: */
+    compareImages(x[i]);
+  }
+  function compareImages(img) {
+    var slider, img, clicked = 0, w, h;
+    /* Get the width and height of the img element */
+    w = img.offsetWidth;
+    h = img.offsetHeight;
+    /* Set the width of the img element to 50%: */
+    img.style.width = (w/2) + "px";
+    /* Create slider: */
+    slider = document.createElement("DIV");
+    slider.setAttribute("class", "img-comp-slider");
+    /* Insert slider */
+    img.parentElement.insertBefore(slider, img);
+    /* Position the slider in the middle: */
+    slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
+    slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
+    /* Execute a function when the mouse button is pressed: */
+    slider.addEventListener("mousedown", slideReady);
+    /* And another function when the mouse button is released: */
+    window.addEventListener("mouseup", slideFinish);
+    /* Or touched (for touch screens: */
+    slider.addEventListener("touchstart", slideReady);
+     /* And released (for touch screens: */
+    window.addEventListener("touchend", slideFinish);
+    function slideReady(e) {
+      /* Prevent any other actions that may occur when moving over the image: */
+      e.preventDefault();
+      /* The slider is now clicked and ready to move: */
+      clicked = 1;
+      /* Execute a function when the slider is moved: */
+      window.addEventListener("mousemove", slideMove);
+      window.addEventListener("touchmove", slideMove);
+    }
+    function slideFinish() {
+      /* The slider is no longer clicked: */
+      clicked = 0;
+    }
+    function slideMove(e) {
+      var pos;
+      /* If the slider is no longer clicked, exit this function: */
+      if (clicked == 0) return false;
+      /* Get the cursor's x position: */
+      pos = getCursorPos(e)
+      /* Prevent the slider from being positioned outside the image: */
+      if (pos < 0) pos = 0;
+      if (pos > w) pos = w;
+      /* Execute a function that will resize the overlay image according to the cursor: */
+      slide(pos);
+    }
+    function getCursorPos(e) {
+      var a, x = 0;
+      e = (e.changedTouches) ? e.changedTouches[0] : e;
+      /* Get the x positions of the image: */
+      a = img.getBoundingClientRect();
+      /* Calculate the cursor's x coordinate, relative to the image: */
+      x = e.pageX - a.left;
+      /* Consider any page scrolling: */
+      x = x - window.pageXOffset;
+      return x;
+    }
+    function slide(x) {
+      /* Resize the image: */
+      img.style.width = x + "px";
+      /* Position the slider: */
+      slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
+    }
+  }
+}
+                           </script>
+ 
+      <div class="img-comp-container">
+  <div class="img-comp-img">
+    <img src="https://images.squarespace-cdn.com/content/v1/5197c761e4b0a2d4e1c2f428/1543451965545-Z1LYR7HX942KGW0NXKR0/used-grom-surfboards" width="300" height="200">
+  </div>
+  <div class="img-comp-img img-comp-overlay">
+    <img src="https://i.shgcdn.com/dbde4f57-7e0b-465f-bccd-719cd8149fb3/-/format/auto/-/preview/3000x3000/-/quality/lighter/" width="300" height="200">
+  </div>
+</div>
+      <script>
+initComparisons();
+</script>
+         <script>
+      function initComparisons() {
+  var x, i;
+  /* Find all elements with an "overlay" class: */
+  x = document.getElementsByClassName("img-comp-overlay2");
+  for (i = 0; i < x.length; i++) {
+    /* Once for each "overlay" element:
+    pass the "overlay" element as a parameter when executing the compareImages function: */
+    compareImages(x[i]);
+  }
+  function compareImages(img) {
+    var slider, img, clicked = 0, w, h;
+    /* Get the width and height of the img element */
+    w = img.offsetWidth;
+    h = img.offsetHeight;
+    /* Set the width of the img element to 50%: */
+    img.style.width = (w / 2) + "px";
+    /* Create slider: */
+    slider = document.createElement("DIV");
+    slider.setAttribute("class", "img-comp-slider2");
+    /* Insert slider */
+    img.parentElement.insertBefore(slider, img);
+    /* Position the slider in the middle: */
+    slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
+    slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
+    /* Execute a function when the mouse button is pressed: */
+    slider.addEventListener("mousedown", slideReady);
+    /* And another function when the mouse button is released: */
+    window.addEventListener("mouseup", slideFinish);
+    /* Or touched (for touch screens: */
+    slider.addEventListener("touchstart", slideReady);
+     /* And released (for touch screens: */
+    window.addEventListener("touchend", slideFinish);
+    function slideReady(e) {
+      /* Prevent any other actions that may occur when moving over the image: */
+      e.preventDefault();
+      /* The slider is now clicked and ready to move: */
+      clicked = 1;
+      /* Execute a function when the slider is moved: */
+      window.addEventListener("mousemove", slideMove);
+      window.addEventListener("touchmove", slideMove);
+    }
+    function slideFinish() {
+      /* The slider is no longer clicked: */
+      clicked = 0;
+    }
+    function slideMove(e) {
+      var pos;
+      /* If the slider is no longer clicked, exit this function: */
+      if (clicked == 0) return false;
+      /* Get the cursor's x position: */
+      pos = getCursorPos(e)
+      /* Prevent the slider from being positioned outside the image: */
+      if (pos < 0) pos = 0;
+      if (pos > w) pos = w;
+      /* Execute a function that will resize the overlay image according to the cursor: */
+      slide(pos);
+    }
+    function getCursorPos(e) {
+      var a, x = 0;
+      e = (e.changedTouches) ? e.changedTouches[0] : e;
+      /* Get the x positions of the image: */
+      a = img.getBoundingClientRect();
+      /* Calculate the cursor's x coordinate, relative to the image: */
+      x = e.pageX - a.left;
+      /* Consider any page scrolling: */
+      x = x - window.pageXOffset;
+      return x;
+    }
+    function slide(x) {
+      /* Resize the image: */
+      img.style.width = x + "px";
+      /* Position the slider: */
+      slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
+    }
+  }
+}
+                           </script>
+      <div class="img-comp-container2">
+  <div class="img-comp-img2">
+    <img src="https://everymanskateboards.com/wp-content/uploads/2021/03/types-of-cruising-longboards.jpeg" width="300" height="200">
+  </div>
+  <div class="img-comp-img2 img-comp-overlay2">
+    <img src="https://cdn.shopify.com/s/files/1/1125/9420/t/146/assets/Choose-board-size-3.jpg?v=103900016062893176521683888200" width="300" height="200">
+  </div>
+</div>
+      <script>
+initComparisons();
+</script>
+      </div>
+      <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+      <div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('Surfboards')"> Surfboards</button>
+  <button class="btn" onclick="filterSelection('Skateboards')"> Skateboards</button>
+  <button class="btn" onclick="filterSelection('Wetsuits/Swimwear')"> Wetsuits/Swimwear</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column Surfboards">
+    <div class="content">
+      <img src="https://cdn.shopify.com/s/files/1/0411/9757/products/ULTIMATE-LONGBOARD-SURFBOARD-BLUEDIP-_EPOXY_9d485f46-2bda-428b-a2bd-3d6aa98e76b7.jpg?v=1640828125" alt="Mountains" style="width:100%">
+      <h4>Longboard (8ft)</h4>
+      <p>$550.00</p>
+    </div>
+  </div>
+  <div class="column Surfboards">
+    <div class="content">
+      <img src="https://cdn.shopify.com/s/files/1/2468/2881/products/1_841868d4-249b-482a-ad7d-1f155ef33e6b_1000x1000.png?v=1656695668" alt="Lights" style="width:100%">
+      <h4>Longboard with fins (9ft)</h4>
+      <p>$649.00</p>
+    </div>
+  </div>
+  <div class="column Surfboards">
+    <div class="content">
+      <img src="https://i.ebayimg.com/images/g/ttEAAOSw3yZi0BFQ/s-l600.jpg" alt="Nature" style="width:100%">
+      <h4>WaveStorm (beginner)</h4>
+      <p>$208.99</p>
+    </div>
+  </div>
+
+  <div class="column Skateboards">
+    <div class="content">
+      <img src="https://i.ebayimg.com/images/g/qfgAAOSwm21gojBq/s-l1600.jpg" alt="Car" style="width:100%">
+      <h4>Element deck</h4>
+      <p>$60</p>
+    </div>
+  </div>
+  <div class="column Skateboards">
+    <div class="content">
+      <img src="https://www.warehouseskateboards.com/images/products/preview/1DZER0BOLD825KW(1).jpg" alt="Car" style="width:100%">
+      <h4>Zero deck</h4>
+      <p>$59.99</p>
+    </div>
+  </div>
+  <div class="column Skateboards">
+    <div class="content">
+      <img src="https://cdn.shopify.com/s/files/1/0464/3156/8023/products/ccxdssa_533x.jpg?v=1627306061" alt="Car" style="width:100%">
+      <h4>Girl deck</h4>
+      <p>$71.99</p>
+    </div>
+  </div>
+
+  <div class="column Wetsuits/Swimwear">
+    <div class="content">
+      <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQmJ9Huda2yA50Lf8q56sofbXKlvJFpZVe2Ri-Y2ADgQA-3xj-6qYKzRfH7mRbGD1Pzrh_WvFpHiEB99OJTpFebVBJQawY3p_33Gp7nEKmswoOWzATT4FRo&usqp=CAE" alt="People" style="width:100%">
+      <h4>4/3mm Wetsuit</h4>
+      <p>$156.37</p>
+    </div>
+  </div>
+  <div class="column Wetsuits/Swimwear">
+    <div class="content">
+      <img src="https://m.media-amazon.com/images/I/61wuJemq7zL._AC_UX569_.jpg" alt="People" style="width:100%">
+      <h4>O'neil rash guard</h4>
+      <p>$37.95</p>
+    </div>
+  </div>
+  <div class="column Wetsuits/Swimwear">
+    <div class="content">
+      <img src="https://cdn.shopify.com/s/files/1/0783/3649/products/9de68acb516f1e4929d64513be8bdf73_grande.jpg?v=1619482334" alt="People" style="width:100%">
+      <h4>Spring Suit (wetsuit)</h4>
+      <p>$89.95</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+      <style> 
+        * {
+  box-sizing: border-box;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.row {
+  margin: 8px -16px;
+  width: 80vw;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide columns by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: blue;
+  padding: 10px;
+  height: 33vw;
+  width: 19vw;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: darkgrey;
+  cursor: pointer;
+}
+
+/* Add a grey background color on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background color to the active button */
+.btn.active {
+  background-color: #666;
+   color: white;
+}
+      </style>
+      <script> 
+        filterSelection("all") // Execute the function and show all columns
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+// Show filtered elements
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+      </script>
+      <br> <br> <br>
     </center>
   </body>
 </html>
@@ -26,8 +433,9 @@
 
 <style>
 body {
-  background-color: #34eb95;
-  horizontal
+  /*background-color: #34eb95;*/
+   background-image: url('https://background-tiles.com/overview/yellow/textures/large/5020.png');
+  background-attachment: fixed;
 }
 .flex-container {
   position: absolute;
@@ -45,9 +453,13 @@ body {
   padding: 10px;
 }
 #cart {
+  right: 10px;
   height: 42.5px;
   width: 48px;
   padding: 10px;
+}
+#cart:hover {
+  cursor: not-allowed;
 }
 
 .middle {
@@ -68,13 +480,13 @@ body {
 }
 
 .right {
-  position: fixed;
+  position: absolute;
   right: 25px;
   top: 19.9px;
 }
 
 #middleRight {
-  position: fixed;
+  position: absolute;
   right: 90px;
 }
 
@@ -93,15 +505,168 @@ input {
 }
 
 h1 {
-  font-size: 80px;
+  font-size: 100px;
   
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  background: blue;
+  width: 500px;
+  height: 22em;
+  position: relative;
+  margin: auto;
+}
+.slideshow-container:hover {
+  drop-shadow: 0 5px 10px 0 black; 
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.slideImage {
+  width: 100%;
+  height: 500px;
+}
+
+.mySlides {height: 22em; position: relative;
+  overflow: hidden}
+
+.mySlides > * {position: absolute; top: 100%; left: 0;
+  animation: 25s autoplay2 infinite ease-in-out}
+
+@keyframes autoplay2 {
+  0% {top: 100%}
+  4% {top: 0%}
+  33.33% {top: 0%}
+  37.33% {top: -100%}
+  100% {top: -100%}
+}
+
+#slideset2 > *:nth-child(1) {animation-delay: 0s}
+#slideset2 > *:nth-child(2) {animation-delay: 5s}
+#slideset2 > *:nth-child(3) {animation-delay: 10s}
+#slideset2 > *:nth-child(4) {animation-delay: 15s}
+#slideset2 > *:nth-child(5) {animation-delay: 20s}
+#slideset2 > *:nth-child(6) {animation-delay: 25s}
+
+
+* {box-sizing: border-box;}
+
+.img-comp-container {
+  top: 365px;
+  left: 73px;
+  margin: auto;
+  position: absolute;
+  width: 500px;
+  height: 300px; /*should be the same height as the images*/
+}
+.img-comp-container2 {
+  top: 365px;
+  right: 73px;
+  margin: auto;
+  position: absolute;
+  width: 500px;
+  height: 300px; /*should be the same height as the images*/
+}
+
+
+.img-comp-img {
+  position: absolute;
+  width: 500px;
+  height: 300px;
+  height: auto;
+  overflow: hidden;
+}
+.img-comp-img2 {
+  position: absolute;
+  width: 500px;
+  height: 300px;
+  height: auto;
+  overflow: hidden;
+}
+
+
+.img-comp-img img {
+  width: 500px;
+  height: 352.3px;
+  display: block;
+  vertical-align: middle;
+}
+.img-comp-img2 img {
+  width: 500px;
+  height: 352.3px;
+  display: block;
+  vertical-align: middle;
+}
+
+.img-comp-slider {
+  position: absolute;
+  z-index: 9;
+  cursor: ew-resize;
+  /*set the appearance of the slider:*/
+  width: 40px;
+  height: 40px;
+  background-color: blue;
+  opacity: 0.7;
+  border-radius: 50%;
+}
+.img-comp-slider2 {
+  position: absolute;
+  z-index: 9;
+  cursor: ew-resize;
+  /*set the appearance of the slider:*/
+  width: 40px;
+  height: 40px;
+  background-color: blue;
+  opacity: 0.7;
+  border-radius: 50%;
+}
+/*.wrapper {
+  justify-content: space evenly;
+}*/
+
+@media only screen and (max-width: 1600px) {
+  .flex-container {
+    display: none;
+  }
+  h1 {
+    margin-top: -50px;
+    font-size: 6vw;
+  }
+  .img-comp-container, .img-comp-container2  {
+    display: none;
+  }
+  .slideshow-container {
+    width: 50vw;
+  }
+}
+@media only screen and (max-width: 700px) {
+  p {
+    display: none;
+  }
 }
 </style>
 
 
 
 <script> 
-  function autocomplete(inp, arr) {
+ function autocomplete(inp, arr) {
 
   var currentFocus;
 
@@ -183,7 +748,26 @@ h1 {
   });
 }
 
-var autoAnswers = ["trick boards", "longboards", "short boards", "clothes", "Surf wax", "wetsuits"];
+var autoAnswers = ["trick boards", "long boards", "short boards", "clothes", "Surf wax", "wetsuits", "skateboard wheels", "trucks", "barrings", "skateboard decks", "leashes" ];
 
 autocomplete(document.getElementById("myInput"), autoAnswers);
+
+
+
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+
 </script>
